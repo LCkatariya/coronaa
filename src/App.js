@@ -43,35 +43,36 @@
             <div className = "box">
               <div className="card">
                 <div className="container">
-                  <ul>
+                  
                     {items.map(item=>(
-                      <li key = {item.id}>
-                      totalConfirmed:{item.totalConfirmed}
-                      </li>
+                     <h3 key = {item.id}>
+                      totalConfirmed<br/>{item.totalConfirmed}
+                      </h3>
                     ))}
-                  </ul>
+                  
                 </div>
               </div>        
               <div className="card">
                 <div className="container">
-                  <ul>
+                  
                     {items.map(item=>(
-                      <li key = {item.id}>
-                        totalRecovered:{item.totalRecovered}
-                      </li>
+                     <h3 key = {item.id}>
+                      totalRecovered <br/>
+                    {item.totalRecovered}
+                      </h3>
                       ))}
-                    </ul>
+                    
                   </div>
                 </div>
                 <div className="card">
                 <div className="container">
-                  <ul>
+                  
                     {items.map(item=>(
-                      <li key = {item.id}>
-                        totalDeaths:{item.totalDeaths}
-                      </li>
+                      <h3 key = {item.id}>
+                        totalDeaths<br/>{item.totalDeaths}
+                      </h3>
                       ))}
-                    </ul>
+                    
                   </div>
                 </div>
             </div>
