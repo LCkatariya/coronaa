@@ -39,6 +39,9 @@
       return (
         
           <div className = "App">
+           
+  <div className="menubar">Corona Live Update</div>
+
 
             <div className = "box">
               <div className="card">
@@ -46,7 +49,7 @@
                   
                     {items.map(item=>(
                      <h3 key = {item.id}>
-                      totalConfirmed<br/>{item.totalConfirmed}
+                      Confirmed<br/>{item.totalConfirmed}
                       </h3>
                     ))}
                   
@@ -57,7 +60,7 @@
                   
                     {items.map(item=>(
                      <h3 key = {item.id}>
-                      totalRecovered <br/>
+                      Recovered <br/>
                     {item.totalRecovered}
                       </h3>
                       ))}
@@ -69,7 +72,7 @@
                   
                     {items.map(item=>(
                       <h3 key = {item.id}>
-                        totalDeaths<br/>{item.totalDeaths}
+                        Deaths<br/>{item.totalDeaths}
                       </h3>
                       ))}
                     

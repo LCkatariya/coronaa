@@ -2,6 +2,15 @@
   text-align: center;
   font-size: 24px;
 }
+.menubar {
+  background-color: blue;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  text-align: center;
+  
+}
+
+
 .box {
   display: flex;
   
@@ -12,11 +21,11 @@
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   width: 30%;
-  margin-top: 50px;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-top: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
   color: blue;
-  background-color: darkkhaki;
+  background-color: brown;
 }
 .container {
   padding: auto;
