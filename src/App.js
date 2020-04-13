@@ -40,7 +40,7 @@
         
           <div className = "App">
            
-  <div className="menubar">Corona Live Update</div>
+  <div className="menubar">Corona Live Update of India</div>
 
 
             <div className = "box">
@@ -49,7 +49,7 @@
                   
                     {items.map(item=>(
                      <h3 key = {item.id}>
-                      Confirmed<br/>{item.totalConfirmed}
+                     TotalConfirmed<br/>{item.totalConfirmed}
                       </h3>
                     ))}
                   
@@ -59,8 +59,8 @@
                 <div className="container">
                   
                     {items.map(item=>(
-                     <h3 key = {item.id}>
-                      Recovered <br/>
+                      <h3 key = {item.id}>
+                      TotalRecovered <br/>
                     {item.totalRecovered}
                       </h3>
                       ))}
@@ -72,14 +72,55 @@
                   
                     {items.map(item=>(
                       <h3 key = {item.id}>
-                        Deaths<br/>{item.totalDeaths}
+                        TotalDeaths<br/>
+                        {item.totalDeaths}
                       </h3>
                       ))}
                     
                   </div>
                 </div>
             </div>
-        
+            <div ></div>
+
+
+            <div className = "box">
+            <div className="card">
+              <div className="container">
+                
+                  {items.map(item=>(
+                    <h3 key = {item.id}>
+                    dailyConfirmed <br/>
+                  {item.dailyConfirmed}
+                    </h3>
+                  ))}
+                
+              </div>
+            </div>        
+            <div className="card">
+              <div className="container">
+                
+                  {items.map(item=>(
+                    <h3 key = {item.id}>
+                    activeCases<br/>{item.activeCases}
+                     </h3>
+                    ))}
+                  
+                </div>
+              </div>
+              <div className="card">
+              <div className="container">
+                
+                  {items.map(item=>(
+                    <h3 key = {item.id}>
+                      dailyDeaths<br/>
+                      {item.dailyDeaths}
+                    </h3>
+                    ))}
+                  
+                </div>
+              </div>
+            </div>
+            
 
           </div>
           
