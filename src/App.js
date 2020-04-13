@@ -40,7 +40,10 @@
         
           <div className = "App">
            
-  <div className="menubar">Corona Live Update of India</div>
+  <div className="menubar">
+    <div className = "tital">Corona Live Update of India</div>
+    
+    </div>
 
 
             <div className = "box">
