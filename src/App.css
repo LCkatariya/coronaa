@@ -1,11 +1,10 @@
 .App {
-  text-align: center;
   font-size: auto;
 }
 .menubar {
-  background-color: rgb(85, 85, 175);
-  padding-top: 1em;
-  padding-bottom: 1em;
+  background-color: rgb(160, 160, 212);
+  width: auto;
+  height: 80px;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px; 
   border-bottom-left-radius: 40px;
@@ -13,33 +12,39 @@
   margin-top: 5px;
 
 }
-.tital{
-  text-align: left;
+.tital{  
   margin-left: 25px;
   font-size: 30px;
   font-weight: bolder;
-
+  color: rgb(161, 75, 54);
+}
+.update{
+  text-align: right;
+  margin-right: 25px;
+  font-size: 15px;
+  font-weight: bolder;
+  color: rgb(161, 75, 54);
 }
 
-
 .box {
-  display: flex;
-  
-  
+  display: -webkit-flex;
+  margin-left:10px;
+  margin-right: 10px;
+  width: 100%;
   
 
 }
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  width: 30%;
+  text-align: center;
+  width: 400px;
+  height: 100px;
   margin-top: 5px;
-  margin-left: 20px;
-  margin-right: 20px;
-  color: rgb(50, 158, 47);
-  background-color: rgb(95, 21, 21);
-  border-style: double;
+  margin-left:10px;
+  margin-right: 10px;
+  color: rgb(115, 214, 194);
+  background-color: rgb(97, 110, 168);
+  border-style: inset;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }

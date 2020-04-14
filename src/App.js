@@ -40,10 +40,16 @@
         
           <div className = "App">
            
-  <div className="menubar">
-    <div className = "tital">Corona Live Update of India</div>
-    
-    </div>
+            <div className="menubar">
+              <div className = "tital">Corona Live Update of India</div>
+              <div className ="update">
+                                {items.map(item=>(
+                              <h3 key = {item.id}>
+                              lastUpdated:{item.lastUpdated}
+                                </h3>
+                              ))}
+              </div>
+            </div>
 
 
             <div className = "box">
