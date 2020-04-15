@@ -4,6 +4,7 @@
 .contary{
   padding: 3px;
   margin-left: 10px;
+  
 }
 .update{
   text-align: right;
@@ -22,7 +23,7 @@
 .card {
   display: inline-block;
   text-align: center;
-  width: 160px;
+  width: 150px;
   height: 100px;
   margin-top: 5px;
   margin-left:10px;
