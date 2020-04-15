@@ -1,6 +1,6 @@
   import React, { Component } from 'react'
   import './App.css'
-  
+  import SearchAppBar from './pages/navbar';
   
   class App extends Component {
     constructor(props) {
@@ -40,96 +40,93 @@
         
           <div className = "App">
            
-            <div className="menubar">
-              <div className = "tital">Corona Live Update of India</div>
-              <div className ="update">
-                                {items.map(item=>(
-                              <h3 key = {item.id}>
-                              lastUpdated:{item.lastUpdated}
-                                </h3>
-                              ))}
-              </div>
-            </div>
-
-
-            <div className = "box">
-              <div className="card">
-                <div className="container">
-                  
-                    {items.map(item=>(
-                     <h3 key = {item.id}>
-                     TotalConfirmed<br/>{item.totalConfirmed}
-                      </h3>
-                    ))}
-                  
-                </div>
-              </div>        
-              <div className="card">
-                <div className="container">
+            <SearchAppBar/> 
+                
+          <div className="contary">  
+            Corona Live Update Of India</div>
+                
+              <div className = "box">
+                <div className="card">
+                  <div className="container">
+                    
+                      {items.map(item=>(
+                      <h3 key = {item.id}>
+                      {item.totalConfirmed}
+                        </h3>
+                      ))}
+                    TotalConfirmed
+                    
+                  </div>
+                </div>        
+                <div className="card">
+                  <div className="container">
                   
                     {items.map(item=>(
                       <h3 key = {item.id}>
-                      TotalRecovered <br/>
                     {item.totalRecovered}
                       </h3>
                       ))}
-                    
+                       TotalRecovered
                   </div>
                 </div>
                 <div className="card">
-                <div className="container">
-                  
+                  <div className="container">                  
                     {items.map(item=>(
                       <h3 key = {item.id}>
-                        TotalDeaths<br/>
+                  
                         {item.totalDeaths}
                       </h3>
                       ))}
-                    
+                          TotalDeaths
                   </div>
                 </div>
-            </div>
-            <div ></div>
-
-
-            <div className = "box">
-            <div className="card">
-              <div className="container">
-                
-                  {items.map(item=>(
-                    <h3 key = {item.id}>
-                    dailyConfirmed <br/>
-                  {item.dailyConfirmed}
-                    </h3>
-                  ))}
-                
-              </div>
-            </div>        
-            <div className="card">
-              <div className="container">
-                
-                  {items.map(item=>(
-                    <h3 key = {item.id}>
-                    activeCases<br/>{item.activeCases}
-                     </h3>
-                    ))}
-                  
-                </div>
-              </div>
-              <div className="card">
-              <div className="container">
-                
-                  {items.map(item=>(
-                    <h3 key = {item.id}>
-                      dailyDeaths<br/>
-                      {item.dailyDeaths}
-                    </h3>
-                    ))}
-                  
-                </div>
-              </div>
-            </div>
+             
             
+          
+
+
+             
+                  <div className="card">
+                    <div className="container">
+                    
+                      {items.map(item=>(
+                        <h3 key = {item.id}>
+                      {item.dailyConfirmed}
+                        </h3>
+                      ))}
+                       dailyConfirmed 
+
+                        
+                    </div>
+                  </div>        
+                  <div className="card">
+                    <div className="container">
+                      {items.map(item=>(
+                        <h3 key = {item.id}>
+                        {item.activeCases}
+                        </h3>
+                        ))}
+                      activeCases
+                    </div>
+                  </div>
+                  <div className="card">
+                    <div className="container">
+                    
+                      {items.map(item=>(
+                        <h3 key = {item.id}>                     
+                          {item.dailyDeaths}
+                        </h3>
+                        ))}
+                         dailyDeaths
+                    </div>
+                  </div>
+                </div>
+                <a className="update"> {items.map(item=>(
+                      <p key = {item.id}>
+                      {item.lastUpdated}
+                        </p>
+                      ))}</a>
+
 
           </div>
           

@@ -1,55 +1,48 @@
 .App {
   font-size: auto;
 }
-.menubar {
-  background-color: rgb(160, 160, 212);
-  width: auto;
-  height: 80px;
-  border-top-left-radius: 40px;
-  border-top-right-radius: 40px; 
-  border-bottom-left-radius: 40px;
-  border-bottom-right-radius: 40px; 
-  margin-top: 5px;
-
-}
-.tital{  
-  margin-left: 25px;
-  font-size: 30px;
-  font-weight: bolder;
-  color: rgb(161, 75, 54);
+.contary{
+  padding: 3px;
+  margin-left: 10px;
 }
 .update{
   text-align: right;
-  margin-right: 25px;
-  font-size: 15px;
-  font-weight: bolder;
-  color: rgb(161, 75, 54);
+  font-size: 14px;
+  font: outline;
+  
 }
 
 .box {
-  display: -webkit-flex;
   margin-left:10px;
-  margin-right: 10px;
   width: 100%;
   
 
 }
 
 .card {
+  display: inline-block;
   text-align: center;
-  width: 400px;
+  width: 160px;
   height: 100px;
   margin-top: 5px;
   margin-left:10px;
-  margin-right: 10px;
-  color: rgb(115, 214, 194);
-  background-color: rgb(97, 110, 168);
-  border-style: inset;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  margin-right:10px;
+  bottom: 10px;
+  
+  color: rgb(126, 108, 105);
+  background-color: rgb(226, 229, 238);
+  border-inline-start-style: outset;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
+/* .container h4 {
+ background-color: lightgray;
+} */
 .container {
   padding: auto;
+  padding-top: 0px;
 }
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
