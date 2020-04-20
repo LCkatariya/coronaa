@@ -1,6 +1,7 @@
   import React, { Component } from 'react'
   import './App.css'
   import SearchAppBar from './pages/navbar';
+  import GetRequest from './pages/list';
   
   class App extends Component {
     constructor(props) {
@@ -40,10 +41,16 @@
         
           <div className = "App">
            
-            <SearchAppBar/> 
+              <SearchAppBar/> 
                 
-          <div className="contary">  
-            Corona Live Update Of India</div>
+              <div className="contary">  
+               <p> Corona Live Update Of India</p>
+                <a className="update"> {items.map(item=>(
+                          <p className="lal" key = {item.id}>
+                          {item.lastUpdated}
+                            </p>
+                          ))}</a>
+              </div>
                 
               <div className = "box">
                 <div className="card">
@@ -80,6 +87,7 @@
                           TotalDeaths
                   </div>
                 </div>
+                
              
             
           
@@ -121,13 +129,8 @@
                     </div>
                   </div>
                 </div>
-                <a className="update"> {items.map(item=>(
-                      <p key = {item.id}>
-                      {item.lastUpdated}
-                        </p>
-                      ))}</a>
-
-
+               
+   <GetRequest/>
           </div>
           
       )
